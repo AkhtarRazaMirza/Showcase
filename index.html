@@ -2,56 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Snake Game — Refactor</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Team pisker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main>
-    <h1 class="title">Snake Game</h1>
-
-    <section class="game-card">
-      <div class="hud">
-        <div class="scores">
-          <div>Score: <strong id="score">0</strong></div>
-          <div>High Score: <strong id="highScore">0</strong></div>
-          <div>Time: <strong id="timer">00:00</strong></div>
+    <main>
+        <div class="box" id="card">
+           
+            <!-- adding content usin js -->
         </div>
-
-        <div class="controls">
-          <button id="pauseBtn" class="btn">Pause</button>
-          <button id="restartBtn" class="btn primary">Restart</button>
-        </div>
-      </div>
-
-      <div id="gameOver" class="overlay hidden" role="status" aria-live="polite">
-        <div class="overlay-card">
-          <h2>Game Over</h2>
-          <p>Your score: <strong id="finalScore">0</strong></p>
-          <button id="playAgainBtn" class="btn primary">Play Again</button>
-        </div>
-      </div>
-
-      <div class="canvas-wrap">
-        <canvas id="gameCanvas" width="400" height="400" aria-label="Snake game canvas"></canvas>
-      </div>
-
-      <!-- Mobile / touch controls (visible on small screens) -->
-      <nav class="touch-controls" aria-hidden="false">
-        <button data-dir="UP" class="arrow up">▲</button>
-        <div class="left-right">
-          <button data-dir="LEFT" class="arrow">◀</button>
-          <button data-dir="RIGHT" class="arrow">▶</button>
-        </div>
-        <button data-dir="DOWN" class="arrow down">▼</button>
-      </nav>
-    </section>
-  </main>
+        <button class="btn" id="change">Change Team</button>
+    </main>
 
 
-  <script src="script.js"></script>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
