@@ -7,7 +7,6 @@ const box = document.getElementById("card");
 const changeBtn = document.getElementById("change")
 
 const iplTeams = [
-    {}, // becose num !== 0
     {
         logo: "CSK",
         name: "Chennai Super Kings",
@@ -15,7 +14,8 @@ const iplTeams = [
         trophies: 5,
         captain: "MS Dhoni",
         primaryColor: "#FFF100",
-        secondaryColor: "black"
+        secondaryColor: "black",
+        link: "https://www.chennaisuperkings.com/"
     },
     {
         logo: "DC",
@@ -24,7 +24,8 @@ const iplTeams = [
         trophies: 0,
         captain: "Axar Patel",
         primaryColor: "#0116CF",
-        secondaryColor: "silver"
+        secondaryColor: "silver",
+        link: "https://www.delhicapitals.in/"
     },
     {
         logo: "KKR",
@@ -33,7 +34,8 @@ const iplTeams = [
         trophies: 3,
         captain: "Ajinkya Rahane",
         primaryColor: "purple",
-        secondaryColor: "gold"
+        secondaryColor: "gold",
+        link: "https://www.kkr.in/"
     },
     {
         logo: "MI",
@@ -42,7 +44,8 @@ const iplTeams = [
         trophies: 5,
         captain: "Hardik Pandya",
         primaryColor: "blue",
-        secondaryColor: "gold"
+        secondaryColor: "gold",
+        link: "https://www.mumbaiindians.com/"
     },
     {
         logo: "PBKS",
@@ -51,7 +54,8 @@ const iplTeams = [
         trophies: 0,
         captain: "Shreyas Iyer",
         primaryColor: "#ED1B24",
-        secondaryColor: "silver"
+        secondaryColor: "silver",
+        link: "https://www.punjabkingsipl.in/"
     },
     {
         logo: "RR",
@@ -60,7 +64,8 @@ const iplTeams = [
         trophies: 1,
         captain: "Sanju Samson",
         primaryColor: "#FC4CFC",
-        secondaryColor: "black"
+        secondaryColor: "black",
+        link: "https://www.rajasthanroyals.com/"
     },
     {
         logo: "RCB",
@@ -69,7 +74,8 @@ const iplTeams = [
         trophies: 1,
         captain: "Rajat Patidar",
         primaryColor: "red",
-        secondaryColor: "black"
+        secondaryColor: "black",
+        link: "https://www.royalchallengers.com/"
     },
     {
         logo: "SRH",
@@ -78,7 +84,8 @@ const iplTeams = [
         trophies: 1,
         captain: "Pat Cummins",
         primaryColor: "orange",
-        secondaryColor: "black"
+        secondaryColor: "black",
+        link: "https://www.sunrisershyderabad.in/"
     },
     {
         logo: "GT",
@@ -87,7 +94,8 @@ const iplTeams = [
         trophies: 1,
         captain: "Shubman Gill",
         primaryColor: "#1B2133",
-        secondaryColor: "silver"
+        secondaryColor: "silver",
+        link: "https://www.gujarattitansipl.com/"
     },
     {
         logo: "LSG",
@@ -96,7 +104,8 @@ const iplTeams = [
         trophies: 0,
         captain: "Rishabh Pant",
         primaryColor: "#0057E2",
-        secondaryColor: "orange"
+        secondaryColor: "orange",
+        link: "https://www.lucknowsupergiants.in"
     }
 ];
 
@@ -118,7 +127,7 @@ function showTeam() {
                 <p>Trophies : <span>${team.trophies}</span></p>
                 <p>Captain : <span>${team.captain}</span></p>
             </div>
-            <a href="https://www.lucknowsupergiants.in" class="btn" target="_blank">Learn more</a>
+            <a href="${team.link}" class="btn" target="_blank">Learn more</a>
         `;
     box.style.backgroundColor = `${team.secondaryColor}`;
     main.style.backgroundColor = `${team.primaryColor}`;
