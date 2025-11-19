@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stikey Notes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <div class="input">
-            <input type="text" name="" id="NotesInput" placeholder="Write You Notes">
-            <button id="addBtn">Add Notes</button>
-        </div>
-    </main>
 
-    <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Til TAl Tol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app" >
+
+    <header>
+      <div>
+        <h1>Tik Tak Tok</h1>
+      </div>
+      <div class="sub" id="statusText">Ready</div>
+    </header>
+
+    <section class="left">
+      <div class="scoreboard">
+        <div class="score"><span class="label">Win</span><b id="win">0</b></div>
+        <div class="score"><span class="label">Loss</span><b id="loss">0</b></div>
+        <div class="score"><span class="label">Drow</span><b id="drow">0</b></div>
+      </div>
+
+      <div class="meta">
+        <div class="row">
+          <div class="player-indicator">
+            <div class="label">Current</div>
+            <div id="currentPlayer" class="chip">—</div>
+          </div>
+          <div class="label">Moves: <span id="moves">0</span></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Time</div>
+          <div id="time">00 : 00</div>
+        </div>
+
+        <div class="meta-bottom">
+          <div class="controls">
+            <button id="resetBtn" class="ghost">Reset Board</button>
+            <button id="gameBtn" class="primary">End Game</button>
+          </div>
+          <div class="footer-note">Player 1 = X, Player 2 = O</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="board-wrap">
+      <div class="board" id="board" aria-label="Tic tac toe board"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
