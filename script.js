@@ -1,4 +1,3 @@
-
 const winEl = document.getElementById('win');
 const lossEl = document.getElementById('loss');
 const drowEl = document.getElementById('drow');
@@ -6,7 +5,6 @@ const timeEl = document.getElementById('time');
 const movesEl = document.getElementById('moves');
 const statusText = document.getElementById('statusText');
 const currentPlayerEl = document.getElementById('currentPlayer');
-
 const boardContainer = document.getElementById('board');
 const resetBtn = document.getElementById('resetBtn');
 const gameBtn = document.getElementById('gameBtn');
